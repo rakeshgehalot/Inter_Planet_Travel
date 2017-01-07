@@ -1,0 +1,79 @@
+#  Virtex 6 ML605 Evaluation Platform
+Net fpga_0_RS232_Uart_1_RX_pin LOC = J24  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_RS232_Uart_1_TX_pin LOC = J25  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<0> LOC=AP24  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<1> LOC=AE21  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<2> LOC=AH27  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<3> LOC=AH28  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_LEDs_Positions_GPIO_IO_pin<4> LOC=AD21  |  IOSTANDARD=LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<0> LOC=AC15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<1> LOC=AP15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<2> LOC=AG17  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<3> LOC=AH17  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<4> LOC=AG15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<5> LOC=AF15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPA_pin<6> LOC=AK14  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_CLK_pin LOC=AE16  |  IOSTANDARD = LVCMOS25  |  PERIOD = 30000 ps;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPIRQ_pin LOC=L9  |  IOSTANDARD = LVCMOS25  |  TIG;
+Net fpga_0_SysACE_CompactFlash_SysACE_CEN_pin LOC=AJ14  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_OEN_pin LOC=AL15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_WEN_pin LOC=AL14  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<0> LOC=AM15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<1> LOC=AJ17  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<2> LOC=AJ16  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<3> LOC=AP16  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<4> LOC=AG16  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<5> LOC=AH15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<6> LOC=AF16  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_SysACE_CompactFlash_SysACE_MPD_pin<7> LOC=AN15  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_clk_1_sys_clk_p_pin TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 200000 kHz;
+Net fpga_0_clk_1_sys_clk_p_pin LOC = J9  |  IOSTANDARD=LVDS_25  |  DIFF_TERM = TRUE;
+Net fpga_0_clk_1_sys_clk_n_pin LOC = H9  |  IOSTANDARD=LVDS_25  |  DIFF_TERM = TRUE;
+Net fpga_0_rst_1_sys_rst_pin TIG;
+Net fpga_0_rst_1_sys_rst_pin LOC = H10  |  IOSTANDARD=SSTL15  |  PULLUP  |  TIG;
+
+#### Module xps_gpio_0_GPIO_IO constraints
+
+# LCD_FPGA_DB4
+Net xps_gpio_0_GPIO_IO_pin<6> LOC = AD14;
+Net xps_gpio_0_GPIO_IO_pin<6> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<6> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<6> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<6> DRIVE=2;
+# LCD_FPGA_DB5
+Net xps_gpio_0_GPIO_IO_pin<5> LOC = AK11;
+Net xps_gpio_0_GPIO_IO_pin<5> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<5> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<5> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<5> DRIVE=2;
+# LCD_FPGA_DB6
+Net xps_gpio_0_GPIO_IO_pin<4> LOC = AJ11;
+Net xps_gpio_0_GPIO_IO_pin<4> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<4> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<4> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<4> DRIVE=2;
+# LCD_FPGA_DB7
+Net xps_gpio_0_GPIO_IO_pin<3> LOC = AE12;
+Net xps_gpio_0_GPIO_IO_pin<3> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<3> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<3> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<3> DRIVE=2;
+# LCD_FPGA_RW
+Net xps_gpio_0_GPIO_IO_pin<2> LOC = AC14;
+Net xps_gpio_0_GPIO_IO_pin<2> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<2> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<2> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<2> DRIVE=2;
+# LCD_FPGA_RS
+Net xps_gpio_0_GPIO_IO_pin<1> LOC = T28;
+Net xps_gpio_0_GPIO_IO_pin<1> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<1> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<1> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<1> DRIVE=2;
+# LCD_FPGA_E
+Net xps_gpio_0_GPIO_IO_pin<0> LOC = AK12;
+Net xps_gpio_0_GPIO_IO_pin<0> IOSTANDARD=LVCMOS25;
+Net xps_gpio_0_GPIO_IO_pin<0> PULLDOWN;
+Net xps_gpio_0_GPIO_IO_pin<0> SLEW=SLOW;
+Net xps_gpio_0_GPIO_IO_pin<0> DRIVE=2;
