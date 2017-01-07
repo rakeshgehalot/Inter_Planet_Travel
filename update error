@@ -1,0 +1,8 @@
+sudo nano /etc/apt/sources.list
+
+apt-get clean
+
+sudo dpkg --configure -a
+sudo apt-get -f install
+
+sudo dpkg -i --force-overwrite <filename>
